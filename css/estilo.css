@@ -1,0 +1,480 @@
+/* estilo universal */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* estilos */
+h1{
+    font-family: 'Asap', sans-serif;
+    color: rgb(226, 1, 1);
+    font-size: 5rem;
+    font-weight: 600;
+    text-align: right;
+    font-style: normal;
+}
+h2{
+    font-family: 'Asap', sans-serif;
+    color: rgb(226, 1, 1);
+    font-size: 3rem;
+    font-weight: 300;
+    text-align: center;
+    font-style: normal;
+}
+h3{
+    font-family: 'Roboto', sans-serif;
+    color: rgb(68, 68, 68);
+    font-size: 2rem;
+    font-weight: 100;
+    text-align: right;
+    font-style: normal;
+}
+h4{
+    font-family: 'Roboto', sans-serif;
+    color: rgb(68, 68, 68);
+    font-size: 1rem;
+    font-weight: 100;
+    text-align: center;
+    font-style: normal;
+}
+h5{
+    font-family: 'Asap', sans-serif;
+    color: rgb(226, 1, 1);
+    font-size: 1.3rem;
+    font-weight: 400;
+}
+p{
+    color: dimgray;
+    font-family: 'Roboto', sans-serif;
+    font-size: 400;
+}
+
+a{
+    font-family: 'Asap', sans-serif;
+    font-weight: 100;
+    text-decoration: none;
+    color: rgb(46, 46, 46);
+    font-size: 1.2rem;
+}
+a:hover{
+    color: rgb(226, 1, 1);
+    font-size: 1.2rem;
+}
+
+/* estilo logo header / Menú*/
+.header__logo-principal{
+    grid-area: marca;
+    position: absolute;
+    left: 5%;
+}
+.header__logo-principal img {
+    width: 180px;
+}
+nav li{
+    display: inline-block;
+    padding: 10px;
+}
+.header__menu{
+    grid-area: cabeza;
+    position: absolute;
+    right: 5%;
+    top: 25px;
+}
+.header {
+    display:grid;
+    grid-template-areas: 
+    "marca cabeza";
+    grid-auto-columns: 1fr 2fr;
+    
+    background-color: rgba(230, 230, 230, 0.89);
+    color: rgb(255, 255, 255);
+    padding: 1rem;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    height: 100px;
+    box-shadow: 0 2px 5px #63636396;
+    z-index: 999;
+}
+.header__hambur-open{
+    display: none;
+    grid-area: hambur;
+}
+.item__oculto{
+    display: none;
+}
+/* estilo nombres y datos profesionales*/
+.nombre {
+    color: red;
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+}
+.info-personal{
+    color: rgb(56, 55, 55);
+    font-family: 'roboto', sans-serif;
+    font-size: 15px;
+}
+/* estilo formulario*/
+div#formulario label { 
+    color: rgb(43, 42, 42);
+    font-family: 'Roboto', sans-serif;
+    font-size: 400;
+    line-height: 2rem;
+}
+.contacto{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    padding: 5rem;
+    background-color: rgba(167, 167, 167, 0.199);
+    border-top: 1px solid #a30b0b;
+    border-bottom: 1px solid #a30b0b;
+}
+.contacto__boton{
+    font-size: 15px;
+    background-color: #afafaf;
+    color: #303030;
+    padding: 0.5rem 2rem 0.5rem 2rem;
+    border-radius: 100px;
+    border: none;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+}
+.contacto__boton:hover{
+    background-color: #a30b0b;
+    color: rgb(255, 255, 255);
+}
+.contacto__titulo{
+    text-align: start;
+}
+.contacto__dr{
+    display: flex;
+    flex-direction: column;
+}
+/* estilos Banners - primera sección */
+.fondo01{
+    min-height: 100vh;
+    padding: 14rem 5%;
+    text-shadow: 1px 1px 5px rgb(255, 255, 255);
+    background-image: linear-gradient(to right, rgba(253, 253, 255, 0), rgba(255, 255, 255, 0.73)), url('../img/banner-img1.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: scroll;
+    color: white;
+}
+.fondo02{
+    min-height: 100vh;
+    padding: 14rem 5%;
+    text-shadow: 1px 1px 5px rgb(255, 255, 255);
+    background-image: linear-gradient(to right, rgba(253, 253, 255, 0), rgba(255, 255, 255, 0.73)), url('../img/banner-img3.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: scroll;
+    color: white;
+}
+.fondo03{
+    min-height: 100vh;
+    padding: 14rem 5%;
+    text-shadow: 1px 1px 5px rgb(255, 255, 255);
+    background-image: linear-gradient(to right, rgba(253, 253, 255, 0), rgba(255, 255, 255, 0.73)), url('../img/banner-img2.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: scroll;
+    color: white;
+}
+.fondo04{
+    min-height: 100vh;
+    padding: 14rem 5%;
+    text-shadow: 1px 1px 5px rgb(255, 255, 255);
+    background-image: linear-gradient(to right, rgba(253, 253, 255, 0), rgba(255, 255, 255, 0.73)), url('../img/banner-img4.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: scroll;
+    color: white;
+}
+/* estilo segundas secciones*/
+/* ESTILOS INICIO*/
+.prepagas{
+    padding: 5rem;
+    background-color: rgba(167, 167, 167, 0.199);
+    border-top: 1px solid #a30b0b;
+    border-bottom: 1px solid #a30b0b;
+}
+.prepagas__div01{
+    margin-bottom: 2rem;
+}
+.prepagas__div02{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.nosotros{
+    padding: 5rem;
+    background-color: rgba(167, 167, 167, 0.199);
+    border-top: 1px solid #a30b0b;
+    border-bottom: 1px solid #a30b0b;
+}
+/* ESTILOS INSTALACIONES*/
+.galeria{
+    background-color: rgba(167, 167, 167, 0.199);
+    border-top: 1px solid #a30b0b;
+    border-bottom: 1px solid #a30b0b;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:center;
+    gap: 50px;
+    padding-top: 50px;
+    padding-right: 10%;
+    padding-left: 10%;
+    padding-bottom: 50px;
+}
+.galeria__img{
+    width: 20%;
+    position: relative;
+    border-radius: 10px;
+}
+/* ESTILOS NOSOTROS*/
+.doctores{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 30px;
+}
+.doctores__01{
+    width: 25%;
+    position: relative;
+    text-align: center;
+}
+.doctores__foto{
+    width: 200px;
+    border-radius: 10px;
+}
+.doctores__nombres{
+    padding-top: 1rem;
+}
+
+/* ESTILOS TRATAMIENTOS*/
+.trata{
+    margin-top: 50px;
+    display: flex;
+    margin-left: 10%;
+}
+.trata_individual{
+    text-align: center;
+    display: inline-block;
+    width: 23%;
+}
+.trata_individual i{
+    color: #afafaf;
+    font-size: 4rem;
+    margin-bottom: 20px;
+}
+.otros_trata{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 1fr;
+    padding: 50px 0 50px 0;
+    margin: 0 100px 0 100px;
+}
+
+.otros_trata__img img{
+    border-radius: 10px;
+    width: 100%;
+    height: 70vh;
+    object-fit: cover;
+    display: block;
+}
+.trata__lista{
+    font-family: 'roboto', sans-serif;
+    list-style: none;
+    font-size: 14px;
+    color: dimgrey;
+    line-height: 25px;
+    margin-left: 40px;
+}
+.otros_trata__lista{
+    display: flex;
+    flex-direction: column;
+}
+td h5{
+    margin-left: 40px;
+}
+/*footer*/
+.info-footer {
+    color: rgb(138, 135, 135);
+    font-family: 'roboto', sans-serif;
+    font-size: 11px;
+    margin-top: 5px;
+}
+.info-footer__b {
+    color: rgb(179, 179, 179);
+    font-family: 'roboto', sans-serif;
+    font-size: 16px;
+}
+.pie{
+    background-color: rgb(46, 46, 46);
+    padding-top: 3rem;
+    padding-bottom: 4rem;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+.pie__logo img{
+    width: 120px;
+}
+.pie__logo{
+    width: 15%;
+    position: relative;
+}
+.pie__hora{
+    width: 20%;
+    position: relative;
+}
+.pie__datos{
+    width: 16%;
+    position: relative;
+}
+.icon{
+    font-size: 20px;
+    padding-top: 10px;
+}
+.icon a{
+    color: aliceblue;
+    padding-right: 5px;
+}
+.icon a:hover{
+    color: rgb(226, 1, 1);
+    font-size: 1.2rem;
+}
+
+/* Media query */
+
+@media screen and (max-width: 1024px){
+
+    h1{
+        font-size: 60px;
+    }
+    h3{
+        font-size: 40px;
+    }
+    /* hambur inicio*/ 
+    .header{
+        grid-template-areas: 
+        "marca hambur";
+        grid-auto-columns: 1fr 1fr;
+    }
+
+    .item__oculto{
+        display: block;
+    }
+    .header__hambur-open{
+        display: flex;
+    }
+    .hambur{
+        position: absolute;
+        right: 5%;
+        top: 30px;
+        font-size: 40px;
+        color: #a30b0b;
+    }
+    #sidebar{
+        background-color: #afafafec;
+        position: fixed;
+        top:0;
+        left:0;
+        height: 100vh;
+        width: 80%;
+        max-width: 350px;
+        z-index: -300;
+
+        transform: translateX(-100%);
+        transition: transform 0.5s;
+    }
+    #sidebar ul{
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        justify-content: center;
+        align-items: flex-start;
+    }
+    #sidebar:target {
+        transform: translateX(0);
+    }
+    /*hambur fin*/
+
+    .fondo01{
+        min-height: 60vh;
+    }
+    .prepagas__div02{
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+    }
+    /* footer */
+    .pie{
+        flex-direction: column;
+        align-items: center;
+    }
+    .pie__logo, .pie__hora, .pie__datos {
+        width: auto;
+        text-align: center;
+        padding: 0 10% 0 10%;
+    }
+    .pie__hora{
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+}
+
+@media screen and (max-width: 600px){
+    .prepagas__div02{
+        flex-direction: column;
+    }
+    .prepagas__div02 img{
+        padding-top: 10px;
+    }
+    .fondo01{
+        min-height: 40vh;
+        background-position-x: right;
+    }
+    h1{
+        text-align: center;
+        font-size: 50px;
+    }
+    h3{
+        text-align: center;
+        font-size: 30px;
+    }
+    /* tratamientos*/
+    .otros_trata{
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+        padding: 50px 0 0 0;
+        margin: 0 5% 0 5%;
+    }
+    .otros_trata__img img{
+        object-fit: cover;
+        width: 100%;
+        height: auto;
+    }
+    .otros_trata__lista{
+        margin-top: 50px;
+    }
+    .trata__lista{
+        text-align: center;
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+    td h5{
+        margin-right: 0;
+        text-align: center;
+    }
+    /* footer */
+    .pie__logo, .pie__hora, .pie__datos {
+        padding: 0 20% 0 20%;
+    }
+}
