@@ -499,6 +499,9 @@ td h5{
         font-size: 30px;
     }
     /* HOME */
+    .prepagas{
+        padding: 3rem;
+    }
     .prepagas__div02{
         flex-direction: column;
     }
