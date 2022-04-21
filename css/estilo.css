@@ -302,15 +302,19 @@ div#formulario label {
     width: 25%;
     position: relative;
     text-align: center;
+    
 }
 .doctores__foto{
     width: 200px;
     border-radius: 10px;
+    transition:all 1s;
+}
+.doctores__foto:hover{
+    transform: scale(1.1,1.1);
 }
 .doctores__nombres{
     padding-top: 1rem;
 }
-
 /* ESTILOS TRATAMIENTOS*/
 .trata{
     margin-top: 50px;
