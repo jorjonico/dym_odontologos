@@ -276,21 +276,35 @@ div#formulario label {
     height: 100%;
     object-fit: cover;
     border-radius: 10px;
+    transition: all 1s;
+}
+.galeria__grid--img:hover{
+    transform: scale(1.2,1.2) rotateZ(3gitdeg);
 }
 .galeria__img001{
     grid-area: uno;
+    overflow: hidden;
+    border-radius: 10px;
 }
 .galeria__img002{
     grid-area: dos;
+    overflow: hidden;
+    border-radius: 10px;
 }
 .galeria__img003{
     grid-area: tres;
+    overflow: hidden;
+    border-radius: 10px;
 }
 .galeria__img004{
     grid-area: cuatro;
+    overflow: hidden;
+    border-radius: 10px;
 }
 .galeria__img005{
     grid-area: cinco;
+    overflow: hidden;
+    border-radius: 10px;
 }
 /* ESTILOS NOSOTROS*/
 .doctores{
@@ -331,6 +345,10 @@ div#formulario label {
     color: #afafaf;
     font-size: 4rem;
     margin-bottom: 20px;
+    transition: all 1s;
+}
+.trata_individual:hover i{
+    color: #a30b0b;
 }
 .otros_trata{
     display: grid;
