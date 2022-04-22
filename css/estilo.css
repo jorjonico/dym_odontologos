@@ -279,7 +279,7 @@ div#formulario label {
     transition: all 1s;
 }
 .galeria__grid--img:hover{
-    transform: scale(1.2,1.2) rotateZ(3gitdeg);
+    transform: scale(1.2,1.2) rotateZ(2deg);
 }
 .galeria__img001{
     grid-area: uno;
