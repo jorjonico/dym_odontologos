@@ -173,49 +173,27 @@ div#formulario label {
 }
 
 /* estilos Banners - primera sección */
-.fondo01{
+.fondo_banner{
     height: 100vh;
     padding: 14rem 5%;
     text-shadow: 1px 1px 5px rgb(255, 255, 255);
-    background-image: linear-gradient(to right, rgba(253, 253, 255, 0), rgba(255, 255, 255, 0.73)), url('../img/banner-img1.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
     background-attachment: scroll;
     color: white;
+}
+.fondo01{
+    background-image: linear-gradient(to right, rgba(253, 253, 255, 0), rgba(255, 255, 255, 0.73)), url('../img/banner-img1.jpg');
 }
 .fondo02{
-    height: 100vh;
-    padding: 14rem 5%;
-    text-shadow: 1px 1px 5px rgb(255, 255, 255);
     background-image: linear-gradient(to right, rgba(253, 253, 255, 0), rgba(255, 255, 255, 0.73)), url('../img/banner-img3.jpg');
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    background-attachment: scroll;
-    color: white;
 }
 .fondo03{
-    height: 100vh;
-    padding: 14rem 5%;
-    text-shadow: 1px 1px 5px rgb(255, 255, 255);
     background-image: linear-gradient(to right, rgba(253, 253, 255, 0), rgba(255, 255, 255, 0.73)), url('../img/banner-img2.jpg');
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    background-attachment: scroll;
-    color: white;
 }
 .fondo04{
-    height: 100vh;
-    padding: 14rem 5%;
-    text-shadow: 1px 1px 5px rgb(255, 255, 255);
     background-image: linear-gradient(to right, rgba(253, 253, 255, 0), rgba(255, 255, 255, 0.73)), url('../img/banner-img4.jpg');
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    background-attachment: scroll;
-    color: white;
 }
 /* estilo segundas secciones*/
 /* ESTILOS INICIO*/
@@ -521,7 +499,7 @@ td h5{
         transform: translateX(0);
     }
     /*hambur fin*/
-    .fondo01, .fondo02, .fondo03, .fondo04 {
+    .fondo_banner {
         height: 600px;
     }
     .prepagas__div02{
@@ -611,7 +589,7 @@ td h5{
     .prepagas__div02 img{
         padding-top: 10px;
     }
-    .fondo01, .fondo02, .fondo03, .fondo04{
+    .fondo_banner{
         height: 400px;
         background-position-x: right;
     }
