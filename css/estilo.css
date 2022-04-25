@@ -195,6 +195,10 @@ div#formulario label {
 .fondo04{
     background-image: linear-gradient(to right, rgba(253, 253, 255, 0), rgba(255, 255, 255, 0.73)), url('../img/banner-img4.jpg');
 }
+.focus-in-contract {
+	-webkit-animation: focus-in-contract 0.7s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+	animation: focus-in-contract 0.7s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
 /* estilo segundas secciones*/
 /* ESTILOS INICIO*/
 .prepagas{
@@ -408,43 +412,35 @@ td h5{
     color: rgb(226, 1, 1);
     font-size: 1.2rem;
 }
-
-/* animaciones */
-.kenburns-left {
-	-webkit-animation: kenburns-left 10s ease-out infinite alternate-reverse forwards;
-	animation: kenburns-left 10s ease-out infinite alternate-reverse forwards;
-}
 /**
  * ----------------------------------------
- * animation kenburns-left
+ * animation focus-in-contract
  * ----------------------------------------
  */
-@-webkit-keyframes kenburns-left {
+@-webkit-keyframes focus-in-contract {
     0% {
-    -webkit-transform: scale(1) translate(0, 0);
-    transform: scale(1) translate(0, 0);
-    -webkit-transform-origin: 16% 50%;
-    transform-origin: 16% 50%;
+    letter-spacing: 1em;
+    -webkit-filter: blur(12px);
+            filter: blur(12px);
+    opacity: 0;
     }
     100% {
-    -webkit-transform: scale(1.25) translate(-20px, 15px);
-    transform: scale(1.25) translate(-20px, 15px);
-    -webkit-transform-origin: left;
-    transform-origin: left;
+    -webkit-filter: blur(0px);
+            filter: blur(0px);
+    opacity: 1;
     }
 }
-@keyframes kenburns-left {
+@keyframes focus-in-contract {
     0% {
-    -webkit-transform: scale(1) translate(0, 0);
-    transform: scale(1) translate(0, 0);
-    -webkit-transform-origin: 16% 50%;
-    transform-origin: 16% 50%;
+    letter-spacing: 1em;
+    -webkit-filter: blur(12px);
+            filter: blur(12px);
+    opacity: 0;
     }
     100% {
-    -webkit-transform: scale(1.25) translate(-20px, 15px);
-    transform: scale(1.25) translate(-20px, 15px);
-    -webkit-transform-origin: left;
-    transform-origin: left;
+    -webkit-filter: blur(0px);
+            filter: blur(0px);
+    opacity: 1;
     }
 }
 /* Media query */
