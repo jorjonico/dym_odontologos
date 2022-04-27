@@ -172,6 +172,32 @@ div#formulario label {
     border-radius: 10px;
 }
 
+/* inicio banner con bootstrap */
+.jumbotron{
+    background: linear-gradient(to right, rgba(253, 253, 255, 0), rgba(255, 255, 255, 0.73)), url(../img/banner-img1.jpg);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+}
+
+  /* appliquer un color au h1 et p #fff */
+.display-4{
+    font-family: 'Asap', sans-serif;
+    color: rgb(226, 1, 1);
+    font-size: 5rem;
+    font-weight: 600;
+    text-align: right;
+    font-style: normal;
+    padding-top: 15%;
+}
+.lead{
+    color: rgb(0, 0, 0);
+    text-align: right;
+    font-size: 2rem;
+    
+}
+/* final banner con bootstrap */
 /* estilos Banners - primera sección */
 .fondo_banner{
     height: 100vh;
