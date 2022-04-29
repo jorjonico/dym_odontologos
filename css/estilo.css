@@ -481,7 +481,7 @@ td h5{
 }
 /* Media query */
 
-@media screen and (max-width: 1024px){
+@media (max-width: 992px){
 
     h1{
         font-size: 60px;
@@ -602,7 +602,7 @@ td h5{
     }
 }
 
-@media screen and (max-width: 600px){
+@media (max-width: 562px){
     h1{
         text-align: center;
         font-size: 50px;
@@ -624,6 +624,10 @@ td h5{
     .fondo_banner{
         height: 400px;
         background-position-x: right;
+    }
+    .obras{
+        display: flex;
+        align-items: center;
     }
     /* Nosotros */
     .doctores{
