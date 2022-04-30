@@ -7,12 +7,13 @@
     <title>D&M Odontólogos</title>
 
     <link rel="icon" type="image/x-icon" href="../img/favicon.png">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
     <link rel="stylesheet" href="../css/estilo.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Asap:wght@400;600;700&family=Roboto:wght@100;400;500;700;900&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/9f903b0588.js" crossorigin="anonymous"></script>
-
+    <script src="./js/bootstrap.bundle.min.js"></script>
 </head>
 <body>
     <header class="header"><!--logo-->
@@ -42,58 +43,68 @@
                 <h3>Lorem ipsum dolor sit amet.</h3>
             </div>
         </section>
-        <section class="contacto"><!--Sección 2 (mapa iframe y formulario)-->
-            <div class="maps"><!--Mapa al consultorio-->
-                <iframe class="googlem" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3271.3672356195802!2d-57.97010218498895!3d-34.92232578037821!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95a2e7ce7a86dab5%3A0xaad7e6ae64ee6347!2sLa%20Plata%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses-419!2sar!4v1647990308306!5m2!1ses-419!2sar" width="600" height="600" style="border:0;" allowfullscreen="" loading="lazy"></iframe>   
-            </div>
-            <div id="formulario"><h2 class="contacto__titulo">Turnos y consultas</h2>
-                <form action="#"><!--info personal-->
-                    <div>
-                        <label for="nombre">Nombre</label>
-                        <input type="text" placeholder="Tú nombre" id="nombre">
+        <section class="conteiner p-5">
+            <div class="row justify-content-center">
+                <div class="col-12 col-lg-6">
+                    <div class="embed-responsive embed-responsive-100x400px"><!--Mapa al consultorio-->
+                        <iframe class="googlem" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3271.3672356195802!2d-57.97010218498895!3d-34.92232578037821!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95a2e7ce7a86dab5%3A0xaad7e6ae64ee6347!2sLa%20Plata%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses-419!2sar!4v1647990308306!5m2!1ses-419!2sar" width="100%" height="400px" style="border:0;" allowfullscreen="" loading="lazy"></iframe>   
                     </div>
-                    <div>
-                        <label for="ape">Apellido</label>
-                        <input type="text" placeholder="Tú apellido" id="ape">
+                </div>
+                <div class="col-12 col-lg-6">
+                    <div id="formulario"><h2 class="contacto__titulo">Turnos y consultas</h2>
+                        <form action="#">
+                            <div class="row">
+                                <div class="col-12 mb-2 col-lg-6">
+                                <input type="text" class="form-control" placeholder="Nombre" name="Nombre">
+                                </div>
+                                <div class="col-12 mb-2 col-lg-6">
+                                <input type="text" class="form-control" placeholder="Apellido" name="Apellido">
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-12 mb-2 col-lg-6">
+                                <input type="text" class="form-control" placeholder="Enter email" name="email">
+                                </div>
+                                <div class="col-12 mb-2 col-lg-6">
+                                <input type="number" class="form-control" placeholder="Teléfono" name="telefono">
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-12 mb-2 col-lg-6">
+                                    <label  for="disabledSelect" class="form-label">Prepaga</label>
+                                    <select id="disabledSelect" class="form-select" name="letra">
+                                    <option selected>Seleccionar su obra social</option>
+                                    <option value="osde">Osde</option>
+                                    <option value="galeno">Galeno</option>
+                                    <option value="ioma">IOMA</option>
+                                    <option value="ospe">Ospe</option>
+                                    </select>
+                                </div>
+                                <div class="col-12 mb-2 col-lg-6">
+                                    <label  for="disabledSelect" class="form-label">Profesional</label>
+                                    <select id="disabledSelect" class="form-select" name="letra">
+                                    <option selected>Seleccionar profesional</option>
+                                    <option value="osde">Secretaría</option>
+                                    <option value="galeno">Dr. Juan Martín</option>
+                                    <option value="ioma">Dr. Estevan Quito</option>
+                                    <option value="ospe">Dr. Natalia Cendra</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <textarea
+                            rows="5"
+                            placeholder="Escriba su mensaje"
+                            class="form-control mb-2"
+                            ></textarea>
+                            <div class="mb-3 form-check">
+                                <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                <label class="form-check-label" for="exampleCheck1">Quiero recibir novedades</label>
+                            </div>
+                            <button type="submit" class="btn btn-danger">Enviar</button>
+                            <button type="reset" class="btn btn-outline-danger">Borrar</button>
+                        </form>
                     </div>
-                    <div>
-                        <label for="email">Tu eMail:</label>
-                        <input type="email" placeholder="ejemplo@tuemail.com" name="email" id="email">
-                    </div>
-                    <div>
-                        <label for="phone">Teléfono</label>
-                        <input type="number" placeholder="Tú teléfono" name="telefono" id="phone">
-                    </div>
-                    <!--info obra social-->    
-                    <div>
-                        <label for="obra">Prepaga</label>
-                        <select name="letra" id="obra"> 
-                            <option value="osde">Osde</option>
-                            <option value="galeno">Galeno</option>
-                            <option value="ioma">IOMA</option>
-                            <option value="ospe">Ospe</option>
-                        </select>
-                    </div>
-                    <!--info profesional-->
-                    <div class="contacto__dr">
-                        <label for="">Profesional</label>
-                        <label for="secretaria">Secretaría <input type="radio" id="secretaria" name="profesional" value="Secretaría"></label>
-                        <label for="drjuan">Dr. Juan Martín <input type="radio" id="drjuan" name="profesional" value="juan"></label>
-                        <label for="dreste">Dr. Estevan Quito <input type="radio" id="dreste" name="profesional" value="estevan"></label>
-                        <label for="drnati">Dr. Natalia Cendra <input type="radio" id="drnati" name="profesional" value="nati"></label>
-                    </div>
-                    <div>
-                        <!--mensaje-->
-                        <label for="Observaciones">Consulta</label>
-                        <textarea placeholder="Observaciones" rows="7" cols="33">Escribe tu consulta aquí</textarea>
-                    </div>
-                    <div>
-                        <label for="nove">Queres recibir nuestras novedades?</label> 
-                        <input type="checkbox" name="acepta" value="1" id="nove"></div>
-                        <!--botones envia y borrar-->
-                    <input class="contacto__boton" type="submit" value="Enviar">
-                    <input class="contacto__boton" type="reset" value="Borrar">
-                </form>
+                </div>
             </div>
         </section>
     </main>
