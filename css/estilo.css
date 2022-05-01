@@ -390,32 +390,8 @@ td h5{
     background-color: rgb(46, 46, 46);
     padding-top: 3rem;
     padding-bottom: 4rem;
-    display: flex;
-    justify-content: space-evenly;
-    flex-wrap: wrap;
 }
-.pie__logo01 img{
-    width: 100px;
-    transition: all 1s;
-}
-.pie__logo01 img:hover{
-    transform: scale(1.2,1.2);
-}
-.pie__logo01{
-    width: 15%;
-    position: relative;
-}
-.pie__logo img{
-    width: 120px;
-    transition: all 1s;
-}
-.pie__logo img:hover{
-    transform: scale(1.2,1.2);
-}
-.pie__logo{
-    width: 15%;
-    position: relative;
-}
+
 .pie__hora{
     width: 20%;
     position: relative;
