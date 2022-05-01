@@ -315,6 +315,12 @@ div#formulario label {
 .doctores__foto:hover{
     transform: scale(1.1,1.1);
 }
+.card_color{
+    transition:all 1s;
+}
+.card_color:hover{
+    background-color: #e0e0e0;
+}
 .doctores__nombres{
     padding-top: 1rem;
 }
