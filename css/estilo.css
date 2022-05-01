@@ -394,6 +394,17 @@ td h5{
     justify-content: space-evenly;
     flex-wrap: wrap;
 }
+.pie__logo01 img{
+    width: 100px;
+    transition: all 1s;
+}
+.pie__logo01 img:hover{
+    transform: scale(1.2,1.2);
+}
+.pie__logo01{
+    width: 15%;
+    position: relative;
+}
 .pie__logo img{
     width: 120px;
     transition: all 1s;
