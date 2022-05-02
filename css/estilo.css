@@ -325,9 +325,6 @@ div#formulario label {
     padding-top: 1rem;
 }
 /* ESTILOS TRATAMIENTOS*/
-.trata_individual{
-    width: 23%;
-}
 .trata_individual i{
     color: #afafaf;
     font-size: 4rem;
@@ -337,20 +334,20 @@ div#formulario label {
 .trata_individual:hover i{
     color: #a30b0b;
 }
-.otros_trata{
+/* .otros_trata{
     display: grid;
     grid-template-columns: 2fr 1fr;
     grid-template-rows: 1fr;
     padding: 50px 0 50px 0;
     margin: 0 100px 0 100px;
-}
-.otros_trata__img img{
+} */
+/* .otros_trata__img img{
     border-radius: 10px;
     width: 100%;
     height: auto;
     object-fit: cover;
     display: block;
-}
+} */
 .trata__lista{
     font-family: 'roboto', sans-serif;
     list-style: none;
@@ -358,12 +355,12 @@ div#formulario label {
     color: dimgrey;
     line-height: 25px;
 }
-.otros_trata__lista{
+/* .otros_trata__lista{
     margin-left: 40px;
 }
 td h5{
     margin-left: 40px;
-}
+} */
 /*Estilos footer*/
 .info-footer {
     color: rgb(138, 135, 135);
