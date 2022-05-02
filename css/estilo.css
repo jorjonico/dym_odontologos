@@ -325,14 +325,7 @@ div#formulario label {
     padding-top: 1rem;
 }
 /* ESTILOS TRATAMIENTOS*/
-.trata{
-    margin-top: 50px;
-    display: flex;
-    margin-left: 10%;
-}
 .trata_individual{
-    text-align: center;
-    display: inline-block;
     width: 23%;
 }
 .trata_individual i{
