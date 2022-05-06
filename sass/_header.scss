@@ -1,0 +1,57 @@
+.header{
+    display:grid;
+    grid-template-areas: 
+    "marca cabeza";
+    grid-auto-columns: 1fr 2fr;
+    background-color: rgba(230, 230, 230, 0.89);
+    color: rgb(255, 255, 255);
+    padding: 1rem;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    height: 100px;
+    box-shadow: 0 2px 5px $colorSecundario;
+    z-index: 999;
+    &__logo-principal{
+        grid-area: marca;
+        position: absolute;
+        left: 5%;
+        transition: all 1s;
+        &:hover{
+            transform: scale(1.1,1.1);
+        }
+        & img {
+            width: 180px;
+        }
+    }
+    nav li{
+        display: inline-block;
+        padding: 10px;
+    }
+    &__hambur-open{
+        display: none;
+        grid-area: hambur;
+        @media (max-width: 992px) {
+        display: flex;
+        }
+        .hambur{
+            position: absolute;
+            right: 5%;
+            top: 30px;
+            font-size: 40px;
+            color: #a30b0b;
+        }
+    }
+    &__menu{
+        grid-area: cabeza;
+        position: absolute;
+        right: 5%;
+        top: 25px;
+        .item__oculto{
+            display: none;
+            @media (max-width: 992px){
+                display: block;
+            }
+        }
+    }
+}

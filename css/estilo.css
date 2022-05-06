@@ -1,12 +1,12 @@
 /* estilo universal */
-* {
+/* * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-}
+} */
 
 /* estilos */
-h1{
+/* h1{
   font-family: 'Asap', sans-serif;
   color: rgb(226, 1, 1);
   font-size: 5rem;
@@ -48,9 +48,9 @@ p{
   color: dimgray;
   font-family: 'Roboto', sans-serif;
   font-size: 400;
-}
+} */
 
-a{
+/* a{
   font-family: 'Asap', sans-serif;
   font-weight: 100;
   text-decoration: none;
@@ -61,32 +61,32 @@ a{
 a:hover{
   color: rgb(226, 1, 1);
   font-size: 1.2rem;
-}
+} */
 
 /* estilo logo header / Menú*/
-.header__logo-principal{
+/* .header__logo-principal{
   grid-area: marca;
   position: absolute;
   left: 5%;
   transition: all 1s;
-}
-.header__logo-principal:hover{
+} */
+/* .header__logo-principal:hover{
   transform: scale(1.1,1.1);
-}
-.header__logo-principal img {
+} */
+/* .header__logo-principal img {
   width: 180px;
-}
-nav li{
+} */
+/* nav li{
   display: inline-block;
   padding: 10px;
-}
-.header__menu{
+} */
+/* .header__menu{
   grid-area: cabeza;
   position: absolute;
   right: 5%;
   top: 25px;
-}
-.header {
+} */
+/* .header {
   display:grid;
   grid-template-areas: 
   "marca cabeza";
@@ -101,14 +101,14 @@ nav li{
   height: 100px;
   box-shadow: 0 2px 5px #63636396;
   z-index: 999;
-}
-.header__hambur-open{
+} */
+/* .header__hambur-open{
   display: none;
   grid-area: hambur;
-}
-.item__oculto{
+} */
+/* .item__oculto{
   display: none;
-}
+} */
 /* estilo nombres y datos profesionales*/
 .nombre {
   color: red;
@@ -452,24 +452,24 @@ td h5{
       font-size: 40px;
   }
   /* hambur inicio nav*/ 
-  .header{
+  /* .header{
       grid-template-areas: 
       "marca hambur";
       grid-auto-columns: 1fr 1fr;
-  }
-  .item__oculto{
+  } */
+  /* .item__oculto{
       display: block;
-  }
-  .header__hambur-open{
+  } */
+/*   .header__hambur-open{
       display: flex;
-  }
-  .hambur{
+  } */
+/*   .hambur{
       position: absolute;
       right: 5%;
       top: 30px;
       font-size: 40px;
       color: #a30b0b;
-  }
+  } */
   #sidebar{
       background-color: #afafafec;
       position: fixed;
