@@ -39,7 +39,7 @@
             right: 5%;
             top: 30px;
             font-size: 40px;
-            color: #a30b0b;
+            color: $colorPrimario;
         }
     }
     &__menu{
@@ -54,4 +54,37 @@
             }
         }
     }
+}
+.fondo_banner{
+    height: 100vh;
+    padding: 14rem 5%;
+    text-shadow: 1px 1px 5px $colorBlanco;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: scroll;
+    color: $colorBlanco;
+    @media (max-width: 992px){
+        height: 600px;
+    }
+    @media (max-width: 562px){
+        height: 400px;
+        background-position-x: right;
+    }
+    .focus-in-contract {
+        -webkit-animation: focus-in-contract 0.7s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+        animation: focus-in-contract 0.7s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+        }
+}
+.fondo01{
+    background-image: linear-gradient(to right, $colorDark, $colorGris), url('../img/banner-img1.jpg');
+}
+.fondo02{
+    background-image: linear-gradient(to right, $colorDark, $colorGris), url('../img/banner-img3.jpg');
+}
+.fondo03{
+    background-image: linear-gradient(to right, $colorDark, $colorGris), url('../img/banner-img2.jpg');
+}
+.fondo04{
+    background-image: linear-gradient(to right, $colorDark, $colorGris), url('../img/banner-img4.jpg');
 }

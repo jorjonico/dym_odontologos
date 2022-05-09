@@ -1,0 +1,33 @@
+.pie{
+    background-color: rgb(46, 46, 46);
+    padding-top: 3rem;
+    padding-bottom: 4rem;
+    .info-footer {
+        color: rgb(138, 135, 135);
+        font-family: 'roboto', sans-serif;
+        font-size: 11px;
+        margin-top: 5px;
+        margin-bottom: 0;
+    }
+    .info-footer__b {
+        color: rgb(179, 179, 179);
+        font-family: 'roboto', sans-serif;
+        font-size: 16px;
+        margin-bottom: 0;
+    }
+    &__datos h5{
+        margin-bottom: 0;
+    }
+    .icon{
+        font-size: 20px;
+        & a{
+            color: $colorBlanco;
+            padding-right: 5px;
+            transition: all 1s;
+            &:hover{
+                color: $colorPrimario;
+                font-size: 1.2rem;
+            }
+        }
+    }
+}

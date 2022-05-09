@@ -11,17 +11,24 @@ a{
     font-size: 1.2rem;
     transition: all 1s;
     &:hover{
-        color: rgb(226, 1, 1);
+        color: $colorPrimario;
         font-size: 1.2rem;
     }
 }
 h1{
     font-family: 'Asap', sans-serif;
-    color: rgb(226, 1, 1);
+    color: $colorPrimario;
     font-size: 5rem;
     font-weight: 600;
     text-align: right;
     font-style: normal;
+    @media (max-width: 992px){
+        font-size: 60px;
+    }
+    @media (max-width: 562px){
+        text-align: center;
+        font-size: 50px;
+    }
 }
 h2{
     font-family: 'Asap', sans-serif;
@@ -38,6 +45,13 @@ h3{
     font-weight: 100;
     text-align: right;
     font-style: normal;
+    @media (max-width: 992px){
+        font-size: 40px;
+    }
+    @media (max-width: 562px){
+        text-align: center;
+        font-size: 30px;
+    }
 }
 h4{
     font-family: 'Roboto', sans-serif;

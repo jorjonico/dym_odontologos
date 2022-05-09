@@ -168,7 +168,7 @@ div#formulario label {
   border-radius: 10px;
 }
 /* estilos Banners - primera sección */
-.fondo_banner{
+/* .fondo_banner{
   height: 100vh;
   padding: 14rem 5%;
   text-shadow: 1px 1px 5px rgb(255, 255, 255);
@@ -177,8 +177,8 @@ div#formulario label {
   background-position: center;
   background-attachment: scroll;
   color: white;
-}
-.fondo01{
+} */
+/* .fondo01{
   background-image: linear-gradient(to right, rgba(253, 253, 255, 0), rgba(255, 255, 255, 0.73)), url('../img/banner-img1.jpg');
 }
 .fondo02{
@@ -189,11 +189,11 @@ div#formulario label {
 }
 .fondo04{
   background-image: linear-gradient(to right, rgba(253, 253, 255, 0), rgba(255, 255, 255, 0.73)), url('../img/banner-img4.jpg');
-}
-.focus-in-contract {
+} */
+/* .focus-in-contract {
 -webkit-animation: focus-in-contract 0.7s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
 animation: focus-in-contract 0.7s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
-}
+} */
 /* estilo segundas secciones*/
 /* ESTILOS INICIO*/
 .prepagas{
@@ -362,41 +362,41 @@ td h5{
   margin-left: 40px;
 } */
 /*Estilos footer*/
-.info-footer {
+/* .info-footer {
   color: rgb(138, 135, 135);
   font-family: 'roboto', sans-serif;
   font-size: 11px;
   margin-top: 5px;
   margin-bottom: 0;
   
-}
-.info-footer__b {
+} */
+/* .info-footer__b {
   color: rgb(179, 179, 179);
   font-family: 'roboto', sans-serif;
   font-size: 16px;
   margin-bottom: 0;
-}
-.pie{
+} */
+/* .pie{
   background-color: rgb(46, 46, 46);
   padding-top: 3rem;
   padding-bottom: 4rem;
-}
+} */
 
-.pie__hora{
+/* .pie__hora{
   width: 20%;
   position: relative;
-}
-.pie__hora h5{
+} */
+/* .pie__hora h5{
   margin-bottom: 0;
-}
-.pie__datos{
+} */
+/* .pie__datos{
   width: 16%;
   position: relative;
-}
-.pie__datos h5{
+} */
+/* .pie__datos h5{
   margin-bottom: 0;
-}
-.icon{
+} */
+/* .icon{
   font-size: 20px;
 }
 .icon a{
@@ -407,7 +407,7 @@ td h5{
 .icon a:hover{
   color: rgb(226, 1, 1);
   font-size: 1.2rem;
-}
+} */
 
 
 /**
@@ -445,12 +445,12 @@ td h5{
 
 @media (max-width: 992px){
 
-  h1{
+/*   h1{
       font-size: 60px;
-  }
-  h3{
+  } */
+/*   h3{
       font-size: 40px;
-  }
+  } */
   /* hambur inicio nav*/ 
   /* .header{
       grid-template-areas: 
@@ -493,9 +493,9 @@ td h5{
       transform: translateX(0);
   }
   /*hambur fin*/
-  .fondo_banner {
+/*   .fondo_banner {
       height: 600px;
-  }
+  } */
   .prepagas__div02{
       justify-content: space-evenly;
       flex-wrap: wrap;
@@ -534,7 +534,7 @@ td h5{
       "tres cinco cinco";
   }
   /* footer */
-  .pie{
+/*   .pie{
       flex-direction: column;
       align-items: center;
   }
@@ -546,18 +546,18 @@ td h5{
   .pie__hora{
       margin-top: 30px;
       margin-bottom: 30px;
-  }
+  } */
 }
 
 @media (max-width: 562px){
-  h1{
+/*   h1{
       text-align: center;
       font-size: 50px;
-  }
-  h3{
+  } */
+/*   h3{
       text-align: center;
       font-size: 30px;
-  }
+  } */
   /* HOME */
   .prepagas{
       padding: 3rem;
@@ -568,10 +568,10 @@ td h5{
   .prepagas__div02 img{
       padding-top: 10px;
   }
-  .fondo_banner{
+/*   .fondo_banner{
       height: 400px;
       background-position-x: right;
-  }
+  } */
   .obras{
       display: flex;
       align-items: center;
@@ -645,7 +645,7 @@ td h5{
       "cinco";
   }
   /* footer */
-  .pie__logo, .pie__hora, .pie__datos {
+/*   .pie__logo, .pie__hora, .pie__datos {
       padding: 0 20% 0 20%;
-  }
+  } */
 }
