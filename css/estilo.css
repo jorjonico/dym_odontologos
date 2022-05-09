@@ -415,7 +415,7 @@ td h5{
 * animation focus-in-contract
 * ----------------------------------------
 */
-@-webkit-keyframes focus-in-contract {
+/* @-webkit-keyframes focus-in-contract {
   0% {
   letter-spacing: 1em;
   -webkit-filter: blur(12px);
@@ -440,7 +440,7 @@ td h5{
           filter: blur(0px);
   opacity: 1;
   }
-}
+} */
 /* Media query */
 
 @media (max-width: 992px){
