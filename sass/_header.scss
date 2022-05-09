@@ -77,11 +77,15 @@
 }
 
 @media (max-width: 992px){
-    .header__hambur-open{
-        display: flex;
-    }
-    .header__menu .item__oculto{
-        display: block;
+    .header{
+        &__hambur-open{
+            display: flex;
+        }
+        &__menu{
+            .item__oculto{
+                display: block;
+            }
+        }
     }
     .fondo_banner{
         height: 600px;
