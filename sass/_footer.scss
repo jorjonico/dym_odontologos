@@ -3,15 +3,15 @@
     padding-top: 3rem;
     padding-bottom: 4rem;
     .info-footer {
-        color: rgb(138, 135, 135);
-        font-family: 'roboto', sans-serif;
+        color: $colorGris2;
+        font-family: $fuenteSec, sans-serif;
         font-size: 11px;
         margin-top: 5px;
         margin-bottom: 0;
     }
     .info-footer__b {
-        color: rgb(179, 179, 179);
-        font-family: 'roboto', sans-serif;
+        color: $colorGris2;
+        font-family: $fuenteSec, sans-serif;
         font-size: 16px;
         margin-bottom: 0;
     }
