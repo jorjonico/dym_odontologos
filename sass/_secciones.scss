@@ -1,11 +1,8 @@
-/* home fondo prepagas */
+/* HOME Prepagas y protectores*/
 .fondo-color{
-    padding: 5rem;
-    background-image: linear-gradient(to bottom, #c0c0c0, #ffffff);
-    border-top: $filetes;
-    border-bottom: $filetes;
+    @extend .gradient-filete;
     .obras{
-        transition: all 1s;
+        transition: all 0.5s;
         &:hover{
             transform: scale(1.3,1.3);
         }
@@ -20,9 +17,125 @@
     background: linear-gradient(to top, rgba(0, 197, 237, 0.193)
     , rgba(255, 2, 145, 0.06))
 }
+/* Segunda sección NOSOTROS */
+.nosotros{
+    @extend .gradient-filete;
+    .card_color{
+        transition:all 0.5s;
+        &:hover{
+            background-color: #e0e0e0;
+        }
+    }
+}
+/* Segunda sección TRATAMIENTOS */
+.trata{
+    @extend .gradient-filete;
+    &__individual i{
+        color: $colorGris2;
+        font-size: 4rem;
+        margin-bottom: 20px;
+        transition: all 0.5s;
+        &:hover{
+            color: $colorPrimario;
+        }
+    }
+}
+.trata__lista{
+    font-family: 'roboto', sans-serif;
+    list-style: none;
+    font-size: 14px;
+    color:$colorGris2;
+    line-height: 25px;
+}
+/* segunda sección GALERIA */
+.galeria{
+    @extend .gradient-filete;
+    min-width: 500px;
+    height: 900px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-areas: 
+    "uno dos dos tres"
+    "uno dos dos tres"
+    "uno cuatro cinco cinco";
+    gap: 20px;
+    padding-top: 50px;
+    padding-right: 5%;
+    padding-left: 5%;
+    padding-bottom: 50px;
+    &__img001{
+        grid-area: uno;
+        overflow: hidden;
+        border-radius: 10px;
+        .galeria__grid--img{
+            @extend .galeriaGrid;
+            &:hover{
+                transform: scale(1.2,1.2) rotateZ(2deg);
+            }
+        }
+    }
+    &__img002{
+        grid-area: dos;
+        overflow: hidden;
+        border-radius: 10px;
+        .galeria__grid--img{
+            @extend .galeriaGrid;
+            &:hover{
+                transform: scale(1.2,1.2) rotateZ(2deg);
+            }
+        }
+    }
+    &__img003{
+        grid-area: tres;
+        overflow: hidden;
+        border-radius: 10px;
+        .galeria__grid--img{
+            @extend .galeriaGrid;
+            &:hover{
+                transform: scale(1.2,1.2) rotateZ(2deg);
+            }
+        }
+    }
+    &__img004{
+        grid-area: cuatro;
+        overflow: hidden;
+        border-radius: 10px;
+        .galeria__grid--img{
+            @extend .galeriaGrid;
+            &:hover{
+                transform: scale(1.2,1.2) rotateZ(2deg);
+            }
+        }
+    }
+    &__img005{
+        grid-area: cinco;
+        overflow: hidden;
+        border-radius: 10px;
+        .galeria__grid--img{
+            @extend .galeriaGrid;
+            &:hover{
+                transform: scale(1.2,1.2) rotateZ(2deg);
+            }
+        }
+    }
+}
+/* @media */
 @media (max-width: 992px){
     .fondo-color{
         padding: 3rem 0 3rem 0;
+    }
+    .galeria{
+        min-width: 500px;
+        height: 1000px;
+        align-content:flex-start;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(4, 1fr);
+        grid-template-areas: 
+        "dos dos uno"
+        "dos dos uno"
+        "tres cuatro uno"
+        "tres cinco cinco";
     }
 }
 @media (max-width: 562px){
@@ -32,5 +145,18 @@
         display: flex;
         align-items: center;
         }
+    }
+    .galeria{
+        min-width: 350px;
+        height: auto;
+        align-content:flex-start;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(5, 1fr);
+        grid-template-areas: 
+        "uno"
+        "dos"
+        "tres"
+        "cuatro"
+        "cinco";
     }
 }

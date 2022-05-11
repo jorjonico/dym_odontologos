@@ -209,12 +209,12 @@ animation: focus-in-contract 0.7s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
   justify-content: space-evenly;
   align-items: center;
 } */
-.nosotros{
+/* .nosotros{
   padding: 5rem;
   background-image: linear-gradient(to bottom, #c0c0c0, #ffffff);
   border-top: 1px solid #a30b0b;
   border-bottom: 1px solid #a30b0b;
-}
+} */
 /* .fondo-color{
   padding: 5rem;
   background-image: linear-gradient(to bottom, #c0c0c0, #ffffff);
@@ -240,7 +240,7 @@ animation: focus-in-contract 0.7s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
   , rgba(255, 2, 145, 0.06))
 } */
 /* ESTILOS INSTALACIONES*/
-.galeria{
+/* .galeria{
   background-color: rgba(167, 167, 167, 0.199);
   border-top: 1px solid #a30b0b;
   border-bottom: 1px solid #a30b0b;
@@ -258,8 +258,8 @@ animation: focus-in-contract 0.7s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
   padding-right: 5%;
   padding-left: 5%;
   padding-bottom: 50px;
-}
-.galeria__grid--img{
+} */
+/* .galeria__grid--img{
   width: 100%;
   height: 100%;
   object-fit: cover;
@@ -268,8 +268,8 @@ animation: focus-in-contract 0.7s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
 }
 .galeria__grid--img:hover{
   transform: scale(1.2,1.2) rotateZ(2deg);
-}
-.galeria__img001{
+} */
+/* .galeria__img001{
   grid-area: uno;
   overflow: hidden;
   border-radius: 10px;
@@ -293,9 +293,9 @@ animation: focus-in-contract 0.7s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
   grid-area: cinco;
   overflow: hidden;
   border-radius: 10px;
-}
+} */
 /* ESTILOS NOSOTROS*/
-.doctores{
+/* .doctores{
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -314,18 +314,18 @@ animation: focus-in-contract 0.7s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
 }
 .doctores__foto:hover{
   transform: scale(1.1,1.1);
-}
-.card_color{
-  transition:all 1s;
+} */
+/* .card_color{
+  transition:all 0.5s;
 }
 .card_color:hover{
   background-color: #e0e0e0;
-}
-.doctores__nombres{
+} */
+/* .doctores__nombres{
   padding-top: 1rem;
-}
+} */
 /* ESTILOS TRATAMIENTOS*/
-.trata_individual i{
+/* .trata_individual i{
   color: #afafaf;
   font-size: 4rem;
   margin-bottom: 20px;
@@ -333,7 +333,7 @@ animation: focus-in-contract 0.7s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
 }
 .trata_individual:hover i{
   color: #a30b0b;
-}
+} */
 /* .otros_trata{
   display: grid;
   grid-template-columns: 2fr 1fr;
@@ -348,13 +348,13 @@ animation: focus-in-contract 0.7s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
   object-fit: cover;
   display: block;
 } */
-.trata__lista{
+/* .trata__lista{
   font-family: 'roboto', sans-serif;
   list-style: none;
   font-size: 14px;
   color: dimgrey;
   line-height: 25px;
-}
+} */
 /* .otros_trata__lista{
   margin-left: 40px;
 }
@@ -501,26 +501,26 @@ td h5{
       flex-wrap: wrap;
   } */
   /* Nosotros */    
-  .nosotros{
+/*   .nosotros{
       padding: 30px 5% 30px 5%;
-  }
-  .doctores{
+  } */
+/*   .doctores{
       justify-content: space-between;
-  }
+  } */
   /* tratamientos */
 /*   .fondo-color{
       padding: 3rem 0 3rem 0;
   } */
-  .trata{
+/*   .trata{
       margin: 30px 5% 0 5%;
       justify-content: space-between;
   }
   .otros_trata{
       padding: 50px 0 50px 0;
       margin-right: 5%;
-  }
+  } */
   /* Istalaciones */
-  .galeria{
+/*   .galeria{
       min-width: 500px;
       height: 1000px;
       
@@ -532,7 +532,7 @@ td h5{
       "dos dos uno"
       "tres cuatro uno"
       "tres cinco cinco";
-  }
+  } */
   /* footer */
 /*   .pie{
       flex-direction: column;
@@ -577,31 +577,31 @@ td h5{
       align-items: center;
   } */
   /* Nosotros */
-  .doctores{
+/*   .doctores{
       flex-direction: column;
       justify-content: flex-start;
       gap: 50px;
       align-content: space-around;
       align-items: stretch;
       margin-bottom: 5%;
-  }
-  .doctores__01{
+  } */
+/*   .doctores__01{
       width: 100%;
-  }
+  } */
   /* tratamientos*/
-  .fondo-color{
+/*   .fondo-color{
       padding: 5rem 10px 5rem 10px;
-  }    
-  .otros_trata h5{
+  }    */ 
+/*   .otros_trata h5{
       text-align: center;
-  }
-  .otros_trata{
+  } */
+/*   .otros_trata{
       grid-template-columns: 1fr;
       grid-template-rows: 1fr 2fr;
       padding: 50px 0 0 0;
       margin: 0 5% 0 5%;
-  }
-  .trata{
+  } */
+/*   .trata{
       margin-top: 0px;
       margin-left: 0%;
       flex-direction: column;
@@ -619,8 +619,8 @@ td h5{
   .otros_trata__lista{
       margin-left: 0px;
       padding-top: 30px;
-  }
-  .trata__lista{
+  } */
+/*   .trata__lista{
       text-align: center;
       margin-left: 0px;
       margin-right: 0px;
@@ -628,9 +628,9 @@ td h5{
   td h5{
       margin-right: 0;
       text-align: center;
-  }
+  } */
   /* galeria */
-  .galeria{
+/*   .galeria{
       min-width: 350px;
       height: auto;
       
@@ -643,7 +643,7 @@ td h5{
       "tres"
       "cuatro"
       "cinco";
-  }
+  } */
   /* footer */
 /*   .pie__logo, .pie__hora, .pie__datos {
       padding: 0 20% 0 20%;
