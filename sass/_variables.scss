@@ -13,7 +13,7 @@ $filetes:1px solid #a30b0b;
 /* EXTEND*/
 .gradient-filete{
     padding: 5rem;
-    background-image: linear-gradient(to bottom, #c0c0c0, #ffffff);
+    background-image: linear-gradient(to bottom, #e1e1e1, #ffffff);
     border-top: $filetes;
     border-bottom: $filetes;
 }
@@ -49,4 +49,9 @@ $filetes:1px solid #a30b0b;
     font-weight: $weight;
     font-family: $fuenteSec, sans-serif;
     font-style: normal;
-} 
+}
+/* MAP */
+$estilos: (
+    color: #3673D9,
+    entro: center
+);
