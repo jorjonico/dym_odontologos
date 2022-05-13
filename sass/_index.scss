@@ -24,28 +24,13 @@ a{
     }
 }
 h1{
-    font-family: $fuentePpal, sans-serif;
-    color: $colorPrimario;
-    font-size: 5rem;
-    font-weight: 600;
-    text-align: right;
-    font-style: normal;
+    @include titulos(right, $colorPrimario, 5rem, 600)
 }
 h2{
-    font-family: $fuentePpal, sans-serif;
-    color: $colorPrimario;
-    font-size: 3rem;
-    font-weight: 300;
-    text-align: center;
-    font-style: normal;
+    @include titulos(center, $colorPrimario, 3rem, 300)
 }
 h3{
-    font-family: $fuenteSec, sans-serif;
-    color: $colorSecundario;
-    font-size: 2rem;
-    font-weight: 100;
-    text-align: right;
-    font-style: normal;
+    @include sub_titulos(right, $colorSecundario, 2rem, 100)
 }
 h4{
     font-family: $fuenteSec, sans-serif;

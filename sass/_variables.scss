@@ -24,3 +24,29 @@ $filetes:1px solid #a30b0b;
     border-radius: 10px;
     transition: all 1s;
 }
+%boton {
+    width: 100px;
+    text-align: center;
+    padding: 5px 0;
+    margin: 2px auto;
+    border-radius: 5px;
+    color: #FFFFFF;
+    border: none;
+}
+/* @mixin  */
+@mixin titulos($align, $color, $size, $weight) {
+    text-align: $align;
+    color: $color;
+    font-size: $size;
+    font-weight: $weight;
+    font-family: $fuentePpal, sans-serif;
+    font-style: normal;
+} 
+@mixin sub_titulos($align, $color, $size, $weight) {
+    text-align: $align;
+    color: $color;
+    font-size: $size;
+    font-weight: $weight;
+    font-family: $fuenteSec, sans-serif;
+    font-style: normal;
+} 

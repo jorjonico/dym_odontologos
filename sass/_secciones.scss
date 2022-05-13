@@ -1,3 +1,11 @@
+/* Titulo banner izq */
+.titulo_banner{
+    @include titulos(left, $colorPrimario, 5rem, 600);
+    margin-bottom: 0px;
+}
+.sub_titulos-banner{
+    @include sub_titulos(left, $colorSecundario, 2rem, 100);
+}
 /* HOME Prepagas y protectores*/
 .fondo-color{
     @extend .gradient-filete;
@@ -16,6 +24,14 @@
     /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     background: linear-gradient(to top, rgba(0, 197, 237, 0.193)
     , rgba(255, 2, 145, 0.06))
+}
+.boton_consul {
+    @extend %boton;
+    background-color: $colorGris2;
+    width: 150px;
+    &:hover{
+        background-color:#ff0290;
+    }
 }
 /* Segunda sección NOSOTROS */
 .nosotros{
@@ -120,8 +136,32 @@
         }
     }
 }
+/* Sección CONTACTO */
+.boton_enviar {
+    @extend %boton;
+    background-color:$colorPrimario;
+    &:hover{
+        background-color: $colorSecundario;
+    }
+}
+.boton_borrar {
+    @extend %boton;
+    background-color:$colorGris;
+    color: $colorSecundario;
+    border: $colorFooter 1px solid;
+    &:hover{
+        background-color: $colorFooter;
+        color: $colorBlanco;
+    }
+}
 /* @media */
 @media (max-width: 992px){
+    .titulo_banner{
+        font-size: 60px;
+    }
+    .sub_titulos-banner{
+        font-size: 40px;
+    }
     .fondo-color{
         padding: 3rem 0 3rem 0;
     }
@@ -139,6 +179,14 @@
     }
 }
 @media (max-width: 562px){
+    .titulo_banner{
+        text-align: center;
+        font-size: 50px;
+    }
+    .sub_titulos-banner{
+        text-align: center;
+        font-size: 30px;
+    }
     .fondo-color{
         padding: 5rem 0 3rem 0;
         .obras{
