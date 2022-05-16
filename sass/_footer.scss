@@ -9,6 +9,17 @@
         margin-top: 5px;
         margin-bottom: 0;
     }
+    .nav__inf{
+        a {
+            line-height: 10px;
+            display: block;
+            color: $colorBlanco;
+            font-family: $fuenteSec, sans-serif;
+            font-size: 12px;
+            margin-top: 5px;
+            margin-bottom: 0;
+        }
+    }
     .info-footer__b {
         color: $colorGris2;
         font-family: $fuenteSec, sans-serif;

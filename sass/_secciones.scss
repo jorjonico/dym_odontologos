@@ -181,6 +181,9 @@
     }
 }
 /* Sección CONTACTO */
+.contacto__titulo{
+    text-align: start;
+}
 .boton_enviar {
     @extend %boton;
     background-color:$colorPrimario;
@@ -264,5 +267,8 @@
         "tres"
         "cuatro"
         "cinco";
+    }
+    .contacto__titulo{
+        text-align: center;
     }
 }
