@@ -9,7 +9,7 @@
         margin-top: 5px;
         margin-bottom: 0;
     }
-    .nav__inf{
+    .nav__inf {
         a {
             line-height: 10px;
             display: block;
@@ -18,6 +18,9 @@
             font-size: 12px;
             margin-top: 5px;
             margin-bottom: 0;
+            &:hover{
+                color: $colorPrimario;
+            }
         }
     }
     .info-footer__b {
