@@ -222,6 +222,20 @@
         "tres cinco cinco";
     }
 }
+@media (max-width: 768px){
+    .fondo-color{
+        .beneficios{
+            padding-left: 13px;
+            padding-right: 13px;
+            grid-template-areas: 
+            "pri"
+            "seg"
+            "ter";
+            grid-auto-columns: 1fr;
+            grid-template-rows: repeat(3, 1fr);
+        }
+    }
+}
 @media (max-width: 562px){
     .titulo_banner{
         text-align: center;
