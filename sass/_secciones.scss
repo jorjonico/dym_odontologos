@@ -23,35 +23,36 @@
         padding-top: 30px;
         gap: 20px;
         &__pri{
-            display: block;
-            align-items: center;
+            display: map-get($beneficios, display);
+            align-items: map-get($beneficios, centrado);
+            border-radius: map-get($beneficios, borde);
+            padding: map-get($beneficios, espacio);
             grid-area: pri;
-            padding-top: 1rem;
-            background-image: linear-gradient(to bottom, #736fa2, #9893c7); 
-            border-radius: 10px;
-            padding: 5 20 5 20px;
+            background-image: linear-gradient(to bottom, #736fa2, #9893c7);
             .titulos-bene{
                 @include sub_titulos(center, $colorBlanco, 2rem, 100);
                 margin-bottom: 0px;
             }
         }
         &__seg{
+            display: map-get($beneficios, display);
+            align-items: map-get($beneficios, centrado);
+            border-radius: map-get($beneficios, borde);
+            padding: map-get($beneficios, espacio);
             grid-area: seg;
-            padding-top: 1rem;
             background-image: linear-gradient(to bottom, #48a6c2, #92c7cd); 
-            border-radius: 10px;
-            padding: 5 20 5 20px;
             .titulos-bene{
                 @include sub_titulos(center, $colorBlanco, 2rem, 100);
                 margin-bottom: 0px;
             }
         }
         &__ter{
+            display: map-get($beneficios, display);
+            align-items: map-get($beneficios, centrado);
+            border-radius: map-get($beneficios, borde);
+            padding: map-get($beneficios, espacio);
             grid-area: ter;
-            padding-top: 1rem;
-            background-image: linear-gradient(to bottom, #969595, #c5c5c5); 
-            border-radius: 10px;
-            padding: 5 20 5 20px;
+            background-image: linear-gradient(to bottom, #969595, #c5c5c5);
             .titulos-bene{
                 @include sub_titulos(center, $colorBlanco, 2rem, 100);
                 margin-bottom: 0px;
