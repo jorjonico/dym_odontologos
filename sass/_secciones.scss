@@ -2,9 +2,11 @@
 .titulo_banner{
     @include titulos(left, $colorPrimario, 5rem, 600);
     margin-bottom: 0px;
+    line-height: 60px;
 }
 .sub_titulos-banner{
     @include sub_titulos(left, $colorSecundario, 2rem, 100);
+    line-height: 40px;
 }
 /* HOME Prepagas y protectores*/
 .fondo-color{
