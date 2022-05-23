@@ -226,6 +226,13 @@
     }
 }
 @media (max-width: 768px){
+    .nosotros, .trata{
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    .trata__lista{
+        padding-left: 0;
+    }
     .fondo-color{
         .beneficios{
             padding-left: 13px;
@@ -240,6 +247,7 @@
     }
 }
 @media (max-width: 562px){
+    
     .titulo_banner{
         text-align: center;
         font-size: 50px;
