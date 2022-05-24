@@ -1,7 +1,7 @@
 /* Titulo banner izq */
 .titulo_banner{
     @include titulos(left, $colorPrimario, 5rem, 600);
-    margin-bottom: 0px;
+    margin-bottom: 20px;
     line-height: 60px;
 }
 .sub_titulos-banner{
@@ -253,6 +253,7 @@
     .titulo_banner{
         text-align: center;
         font-size: 50px;
+        margin-bottom: 0px;
     }
     .sub_titulos-banner{
         text-align: center;
