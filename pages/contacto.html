@@ -4,11 +4,13 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>D&M Odontólogos</title>
+    <meta name="keywords" content="Contacto, email, Teléfono, turnos, consultas">
+    <meta name="description" content="Contáctenos y nos comunicaremos con usted a la brevedad">
+    <title>Comuníquese con nosotros para solicitar turno</title>
 
     <link rel="icon" type="image/x-icon" href="../img/favicon.png">
     <link rel="stylesheet" href="../css/bootstrap.min.css">
-    <link rel="stylesheet" href="../css/estilo.css">
+    <link rel="stylesheet" href="../css/estilo.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Asap:wght@400;600;700&family=Roboto:wght@100;400;500;700;900&display=swap" rel="stylesheet">
@@ -19,7 +21,7 @@
     <header class="header"><!--logo-->
         <div class="header__logo-principal">
             <a href="../index.html">
-            <img src="../img/logo01.png" alt="Logo D&M"></a>
+            <img src="../img/logo01.png" width="180" height="58.86" alt="Logo D&M"></a>
         </div>
         <!-- navegación -->
         <a class="header__hambur-open" href="#sidebar">
@@ -39,11 +41,11 @@
     <main>        
         <section class="fondo_banner fondo02"><!--Sección 1-->
             <div class="focus-in-contract">
-                <h1>Contáctenos</h1>
-                <h3>Lorem ipsum dolor sit amet.</h3>
+                <p class="titulo_banner">Contáctenos</p>
+                <p class="sub_titulos-banner">Nos comunicaremos con usted a la brevedad</p>
             </div>
         </section>
-        <section class="conteiner p-5">
+        <section class="conteiner p-4 mb-4">
             <div class="row justify-content-center">
                 <div class="col-12 col-md-6 mb-5" style="height: 400px;">
                     <iframe class="googlem" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3271.3672356195802!2d-57.97010218498895!3d-34.92232578037821!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95a2e7ce7a86dab5%3A0xaad7e6ae64ee6347!2sLa%20Plata%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses-419!2sar!4v1647990308306!5m2!1ses-419!2sar" width="100%" height="400px" style="border:0;" allowfullscreen="" loading="lazy" allowfullscreen></iframe>   
@@ -53,10 +55,10 @@
                         <form action="#">
                             <div class="row">
                                 <div class="col-12 mb-2 col-lg-6">
-                                <input type="text" class="form-control" placeholder="Nombre" name="Nombre">
+                                <input type="text" class="form-control" placeholder="Nombre" name="Nombre" required>
                                 </div>
                                 <div class="col-12 mb-2 col-lg-6">
-                                <input type="text" class="form-control" placeholder="Apellido" name="Apellido">
+                                <input type="text" class="form-control" placeholder="Apellido" name="Apellido" required>
                                 </div>
                             </div>
                             <div class="row">
@@ -64,7 +66,7 @@
                                 <input type="text" class="form-control" placeholder="Email" name="email">
                                 </div>
                                 <div class="col-12 mb-2 col-lg-6">
-                                <input type="number" class="form-control" placeholder="Teléfono" name="Telefono">
+                                <input type="number" class="form-control" placeholder="Teléfono" name="Telefono" required>
                                 </div>
                             </div>
                             <div class="row">
@@ -89,17 +91,13 @@
                                     </select>
                                 </div>
                             </div>
-                            <textarea
-                            rows="5"
-                            placeholder="Escriba su mensaje"
-                            class="form-control mb-2"
-                            ></textarea>
+                            <textarea rows="5" placeholder="Escriba su mensaje" class="form-control mb-2" required></textarea>
                             <div class="mb-3 form-check">
                                 <input type="checkbox" class="form-check-input" id="exampleCheck1">
                                 <label class="form-check-label" for="exampleCheck1">Quiero recibir novedades</label>
                             </div>
-                            <button type="submit" class="btn btn-danger">Enviar</button>
-                            <button type="reset" class="btn btn-outline-danger">Borrar</button>
+                            <button type="submit" class="boton_enviar">Enviar</button>
+                            <button type="reset" class="boton_borrar">Borrar</button>
                         </form>
                     </div>
                 </div>
@@ -110,10 +108,20 @@
     <footer class="pie" >
         <div class="container">
             <div class="row">
-                <div class="col-12 col-md-6 col-lg-6 mb-3 text-center text-md-start text-lg-start">
+                <div class="col-12 col-md-6 col-lg-4 mb-3 text-center text-md-start text-lg-start">
                     <a href="../index.html">
-                        <img src="../img/logo02-03.png" alt="Logo D&M" style="width: 120px;"></a> 
+                        <img src="../img/logo02-03.png" width="120" height="39.24" alt="Logo D&M" style="width: 120px;"></a> 
                     <p class="info-footer">Somos el Centro Odontológico más moderno de la ciudad de La Plata.</p>
+                </div>
+                <div class="col-12 col-md-6 col-lg-2 mt-3 mb-3 text-center text-md-start text-lg-start">
+                    <h5>Navegación</h5>
+                    <div class="nav__inf">
+                        <a href="../index.html">Inicio</a>
+                        <a href="./nosotros.html">Nosotros</a>
+                        <a href="./tratamientos.html">Tratamientos</a>
+                        <a href="./instalaciones.html">Instalaciones</a>
+                        <a href="./contacto.html">Contacto</a>
+                    </div>
                 </div>
                 <div class="col-12 col-md-6 col-lg-3 mt-3 mb-3 text-center text-md-start text-lg-start">
                     <h5>Horarios De Atención</h5>
@@ -124,7 +132,7 @@
                         <a href="#"><i class="fa-brands fa-youtube"></i></a>
                 </div>
                 </div>
-                <div class="col-12 col-md-12 col-lg-3 mt-3 text-center text-md-start text-lg-start">
+                <div class="col-12 col-md-6 col-lg-3 mt-3 text-center text-md-start text-lg-start">
                     <h5>Dirección y contacto</h5>
                     <p class="info-footer"><strong>Dirección: </strong>Calle 10 número 657 entre 45 y 46 - La Plata - Provincia de Buenos Aires</p>
                     <p class="info-footer"><strong>Teléfono: </strong>(0221) 482-9175 / (0221) 482-0508</p>

@@ -1,0 +1,147 @@
+.header{
+    display:grid;
+    grid-template-areas: 
+    "marca cabeza";
+    grid-auto-columns: 1fr 3fr;
+    background-color: rgba(230, 230, 230, 0.89);
+    color: rgb(255, 255, 255);
+    width: 100%;
+    position: fixed;
+    top: 0;
+    height: 100px;
+    box-shadow: 0 2px 5px $colorSecundario;
+    z-index: 999;
+    &__logo-principal{
+        grid-area: marca;
+        position: absolute;
+        padding-top: 1rem;
+        left: 20%;
+        transition: all 1s;
+        &:hover{
+            transform: scale(1.1,1.1);
+        }
+        & img {
+            width: 180px;
+        }
+    }
+    nav li{
+        display: inline-block;
+        padding: 20px;
+    }
+    &__hambur-open{
+        display: none;
+        grid-area: hambur;
+        .hambur{
+            position: absolute;
+            right: 10%;
+            top: 30px;
+            font-size: 40px;
+            color: $colorPrimario;
+        }
+    }
+    &__menu{
+        grid-area: cabeza;
+        position: absolute;
+        right: 5%;
+        top: 25px;
+        .item__oculto{
+            display: none;
+        }
+    }
+}
+.fondo_banner{
+    height: 600px;
+    padding: 14rem 5%;
+    text-shadow: 1px 1px 5px $colorBlanco;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: scroll;
+    color: $colorBlanco;
+    .focus-in-contract {
+        -webkit-animation: focus-in-contract 0.7s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+        animation: focus-in-contract 0.7s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+        }
+}
+.fondo01{
+    background-image: linear-gradient(to right, $colorDark, $colorGris), url('../img/banner-img1.jpg');
+}
+.fondo02{
+    background-image: linear-gradient(to left, $colorDark, $colorGris), url('../img/banner-img3.jpg');
+}
+.fondo03{
+    background-image: linear-gradient(to right, $colorDark, $colorGris), url('../img/banner-img2.jpg');
+}
+.fondo04{
+    background-image: linear-gradient(to right, $colorDark, $colorGris), url('../img/banner-img4.jpg');
+}
+
+@media (max-width: 992px){
+    .header{
+        &__hambur-open{
+            display: flex;
+        }
+        &__menu{
+            .item__oculto{
+                display: block;
+            }
+        }
+        #sidebar{
+            background-color: #afafafec;
+            position: fixed;
+            top:0;
+            left:0;
+            height: 100vh;
+            width: 80%;
+            max-width: 350px;
+            z-index: -300;
+            transform: translateX(-100%);
+            transition: transform 0.5s;
+            & ul{
+                display: flex;
+                flex-direction: column;
+                height: 100%;
+                justify-content: center;
+                align-items: flex-start;
+            }
+            &:target {
+                transform: translateX(0);
+            }
+        }
+    }
+    .fondo_banner{
+        height: 600px;
+    }
+}
+@media (max-width: 562px){
+    .fondo_banner{
+        height: 400px;
+        background-position-x: right;
+    }
+}
+@-webkit-keyframes focus-in-contract {
+    0% {
+    letter-spacing: 1em;
+    -webkit-filter: blur(12px);
+            filter: blur(12px);
+    opacity: 0;
+    }
+    100% {
+    -webkit-filter: blur(0px);
+            filter: blur(0px);
+    opacity: 1;
+    }
+}
+@keyframes focus-in-contract {
+    0% {
+    letter-spacing: 1em;
+    -webkit-filter: blur(12px);
+            filter: blur(12px);
+    opacity: 0;
+    }
+    100% {
+    -webkit-filter: blur(0px);
+            filter: blur(0px);
+    opacity: 1;
+    }
+}

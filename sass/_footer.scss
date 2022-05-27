@@ -1,0 +1,47 @@
+.pie{
+    background-color: $colorFooter;
+    padding-top: 3rem;
+    padding-bottom: 4rem;
+    .info-footer {
+        color: $colorGris2;
+        font-family: $fuenteSec, sans-serif;
+        font-size: 11px;
+        margin-top: 5px;
+        margin-bottom: 0;
+    }
+    .nav__inf {
+        a {
+            line-height: 10px;
+            display: block;
+            color: $colorBlanco;
+            font-family: $fuenteSec, sans-serif;
+            font-size: 12px;
+            margin-top: 5px;
+            margin-bottom: 0;
+            &:hover{
+                color: $colorPrimario;
+            }
+        }
+    }
+    .info-footer__b {
+        color: $colorGris2;
+        font-family: $fuenteSec, sans-serif;
+        font-size: 16px;
+        margin-bottom: 0;
+    }
+    &__datos h5{
+        margin-bottom: 0;
+    }
+    .icon{
+        font-size: 20px;
+        & a{
+            color: $colorBlanco;
+            padding-right: 5px;
+            transition: all 1s;
+            &:hover{
+                color: $colorPrimario;
+                font-size: 1.2rem;
+            }
+        }
+    }
+}

@@ -4,24 +4,25 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>D&M Odontólogos</title>
+    <meta name="keywords" content="Odontología, Odontólogos, tratamientos, prepagas, obras, sociales, protectores, deportivos">
+    <meta name="description" content="D&M Odontólogos, Centro Odontológico especializado en implantes dentales y cuidados integrales de la salud bucal. Trabajamos con obras sociales y en forma particular. Realizamos protectores bucales deportivos personalizados">
+    <title>Bienvenidos a D&M Odontólogos</title>
 
     <link rel="icon" type="image/x-icon" href="img/favicon.png">
     <link rel="stylesheet" href="./css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/estilo.css">
+    <link rel="stylesheet" href="./css/estilo.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Asap:wght@100;400;600;700&family=Roboto:wght@100;400;500;700;900&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/9f903b0588.js" crossorigin="anonymous"></script>
     <script src="./js/bootstrap.bundle.min.js"></script>
 </head>
-<body>
-    <header class="header"><!--logo-->
+<body><!-- Logo, navegación y banner /sass/header.scss-->
+    <header class="header">
         <div class="header__logo-principal">
             <a href="index.html">
-            <img src="img/logo01.png" alt="Logo D&M"></a>
+            <img src="img/logo01.png" width="180" height="58.86" alt="Logo D&M"></a>
         </div>
-        <!-- navegación -->
         <a class="header__hambur-open" href="#sidebar">
             <i class="hambur fa-solid fa-bars"></i>
         </a>
@@ -36,51 +37,68 @@
             </ul>
         </nav>
     </header>
-        <!--Sección 1-->
+    <main>
+        <!--Sección 1 Banner/sass/header.scss-->
             <section class="fondo_banner fondo01">
                 <div class="focus-in-contract">
                     <h1>Bienvenidos a DyM</h1>
                     <h3>Centro Odontológico de alta complejidad</h3>
                 </div>
             </section>
-        <!--inicio segunda sección Prepagas-->
-            <section class="prepagas">
-                <div class="container-xxl pb-5 mt-5 pt-5 mb-5">
+        <!--inicio segunda sección Prepagas y Protectores /sass/SECCIONES.SCSS.scss-->
+            <section class="fondo-color">
+                <div class="container-xxl mb-5">
                     <div class="row justify-content-center text-center">
                         <div class="col-12 col-md-12 mb-3 text-center">
                             <h2>Prepagas</h2>
                             <h4>Consulte por otras prepagas u obras sociales</h4>                            
                         </div>
-                        <div class="col-12 col-md-auto mx-4 mt-3"><img class="obras d-block mx-auto" src="img/osde.png" alt="Logo Osde"></div>
-                        <div class="col-12 col-md-auto mx-4 mt-3"><img class="obras d-block mx-auto" src="img/galeno.png" alt="Logo Galeno"></div>
-                        <div class="col-12 col-md-auto mx-4 mt-3"><img class="obras d-block mx-auto" src="img/medife.png" alt="Logo Medife"></div>
-                        <div class="col-12 col-md-auto mx-4 mt-3"><img class="obras d-block mx-auto" src="img/ospe.png" alt="Logo Ospe"></div>
-                        <div class="col-12 col-md-auto mx-4 mt-3"><img class="obras d-block mx-auto" src="img/swiss.png" alt="Logo Swiss Medical"></div>
+                        <div class="col-12 col-md-auto mx-4 mt-3"><img class="obras d-block mx-auto" src="img/osde.png" width="130" height="51" alt="Logo Osde"></div>
+                        <div class="col-12 col-md-auto mx-4 mt-3"><img class="obras d-block mx-auto" src="img/galeno.png" width="200" height="48" alt="Logo Galeno"></div>
+                        <div class="col-12 col-md-auto mx-4 mt-3"><img class="obras d-block mx-auto" src="img/medife.png" width="150" height="45" alt="Logo Medife"></div>
+                        <div class="col-12 col-md-auto mx-4 mt-3"><img class="obras d-block mx-auto" src="img/ospe.png" width="150" height="47" alt="Logo Ospe"></div>
+                        <div class="col-12 col-md-auto mx-4 mt-3"><img class="obras d-block mx-auto" src="img/swiss.png" width="200" height="40" alt="Logo Swiss Medical"></div>
+                    </div>
+                </div>
+                <div class="beneficios">
+                    <div class="beneficios__pri">
+                        <p class="titulos-bene lh-1">20% de descuento</p>
+                        <p class="fw-light lh-base text-center text-white mt-0">Válido para pagos en efectivo al inicio del tratamiento.</p>
+                    </div>
+                    <div class="beneficios__seg">
+                        <p class="titulos-bene lh-1">3, 6, 8 y 12 cuotas sin interés</p>
+                        <p class="fw-light lh-base text-center text-white mt-0">Con tarjetas de crédito</p>
+                    </div>
+                    <div class="beneficios__ter">
+                        <p class="titulos-bene lh-1">Medios de Pago</p>
+                        <p class="fw-light lh-base text-center text-white mt-0">Efectivo, PagoFácil, Cheque, Tarjetas de Débito, Tarjetas de Crédito Visa, Mastercard, American Express y Tarjeta Naranja, Transferencia Bancaria.</p>
                     </div>
                 </div>
             </section>
             <!--final segunda sección Prepagas-->
-            <!-- inicio sección protectores deportivos -->
+            <!-- inicio sección protectores deportivos /sass/secciones.scss -->
             <section class="gradient-custom">
                 <div class="container py-5">
                     <div class="row">
-                        <div class="col-12 col-md-6 pb-5">
-                            <img class="img-fluid" style="width: 400px;" src="./img/logo_sport.png" alt="">
-                            <h3 class="block pt-5 text-secondary" style="text-align: left;">Ponele tu estilo</h3>
-                            <p class="fw-light lh-base">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Perferendis cupiditate nihil sed ea sequi! Ex quos itaque tenetur, nostrum quaerat minima quidem corporis pariatur magni praesentium facilis culpa distinctio deleniti?</p>
-                            <button type="button" class="btn btn-outline-dark">Pedí el tuyo YA!</button>
+                        <div class="col-12 col-md-6 pb-5 text-center text-md-start text-lg-start">
+                            <img class="img-fluid"  src="./img/logo_sport.png" width="400" height="108.8" alt="">
+                            <h3 class="block pt-5 text-secondary text-center text-md-start text-lg-start">Ponele tu estilo</h3>
+                            <p class="fw-light lh-base">Los protectores personalizados o hechos a medida, son los que realiza el odontólogo tomando una impresión (molde)  de la boca del deportista. Su realización es muy sencilla y sin molestia alguna. Son realizados en materiales termoplásticos íntimamente adaptados a los dientes y encías.  Al tener este excelente ajuste, son insuperables en la comodidad, la respiración y el habla durante su uso con respecto a los que se venden en el comercio.  Pueden tener diferentes capas y complementos.</p>
+                            <a href="./pages/contacto.html">
+                                <input type="button" class="boton_consul" value="Pedí el tuyo YA!">
+                            </a>
                         </div>
                         <div class="col-12 col-md-6" >
                             <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
                                 <div class="carousel-inner rounded-3">
                                 <div class="carousel-item active">
-                                    <img src="./img/protectores-bucales.jpg" class="d-block w-100" alt="Protectores bucales">
+                                    <img src="./img/protectores-bucales.jpg" width="546" height="333.86" class="d-block w-100" alt="Protectores bucales">
                                 </div>
                                 <div class="carousel-item">
-                                    <img src="./img/protectores-bucales002.jpg" class="d-block w-100" alt="Protectores bucales">
+                                    <img src="./img/protectores-bucales002.jpg" width="546" height="333.86" class="d-block w-100" alt="Protectores bucales">
                                 </div>
                                 <div class="carousel-item">
-                                    <img src="./img/protectores-bucales003.jpg" class="d-block w-100" alt="Protectores bucales">
+                                    <img src="./img/protectores-bucales003.jpg" width="546" height="333.86" class="d-block w-100" alt="Protectores bucales">
                                 </div>
                                 </div>
                                 <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
@@ -98,14 +116,24 @@
             </section>
         <!-- fin sección protectores deportivos -->
     </main>
-    <!-- inicio footer -->
+    <!-- inicio footer /sass/footer.scss -->
     <footer class="pie" >
         <div class="container">
             <div class="row">
-                <div class="col-12 col-md-6 col-lg-6 mb-3 text-center text-md-start text-lg-start">
+                <div class="col-12 col-md-6 col-lg-4 mb-3 text-center text-md-start text-lg-start">
                     <a href="./index.html">
-                        <img src="./img/logo02-03.png" alt="Logo D&M" style="width: 120px;"></a> 
+                        <img src="./img/logo02-03.png" width="120" height="39.24" alt="Logo D&M" style="width: 120px;"></a> 
                     <p class="info-footer">Somos el Centro Odontológico más moderno de la ciudad de La Plata.</p>
+                </div>
+                <div class="col-12 col-md-6 col-lg-2 mt-3 mb-3 text-center text-md-start text-lg-start">
+                    <h5>Navegación</h5>
+                    <div class="nav__inf">
+                        <a href="index.html">Inicio</a>
+                        <a href="pages/nosotros.html">Nosotros</a>
+                        <a href="pages/tratamientos.html">Tratamientos</a>
+                        <a href="pages/instalaciones.html">Instalaciones</a>
+                        <a href="pages/contacto.html">Contacto</a>
+                    </div>
                 </div>
                 <div class="col-12 col-md-6 col-lg-3 mt-3 mb-3 text-center text-md-start text-lg-start">
                     <h5>Horarios De Atención</h5>
@@ -116,7 +144,7 @@
                         <a href="#"><i class="fa-brands fa-youtube"></i></a>
                 </div>
                 </div>
-                <div class="col-12 col-md-12 col-lg-3 mt-3 text-center text-md-start text-lg-start">
+                <div class="col-12 col-md-6 col-lg-3 mt-3 text-center text-md-start text-lg-start">
                     <h5>Dirección y contacto</h5>
                     <p class="info-footer"><strong>Dirección: </strong>Calle 10 número 657 entre 45 y 46 - La Plata - Provincia de Buenos Aires</p>
                     <p class="info-footer"><strong>Teléfono: </strong>(0221) 482-9175 / (0221) 482-0508</p>

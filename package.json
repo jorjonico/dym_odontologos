@@ -1,0 +1,20 @@
+{
+  "name": "dym",
+  "version": "1.0.0",
+  "description": "Proyecto sitio de grupo odontológico",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start":"sass estilo.scss ./css/estilo.min.css -w --no-source-map -s compressed"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jorjonico/dym_odontologos.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jorjonico/dym_odontologos/issues"
+  },
+  "homepage": "https://github.com/jorjonico/dym_odontologos#readme"
+}

@@ -1,0 +1,71 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+/* body{
+    background-image:linear-gradient(to top, $colorDark, $colorGris), url(../img/bgn.png);
+}
+main{
+    max-width: 1400px;
+    margin: auto;
+    background-color: $colorBlanco;
+} */
+a{
+    font-family:$fuentePpal, sans-serif;
+    font-weight: 100;
+    text-decoration: none;
+    color: $colorSecundario;
+    font-size: 1.2rem;
+    transition: all 1s;
+    &:hover{
+        color: $colorPrimario;
+        font-size: 1.2rem;
+    }
+}
+h1{
+    @include titulos(right, $colorPrimario, 5rem, 600)
+}
+h2{
+    @include titulos(center, $colorPrimario, 3rem, 300)
+}
+h3{
+    @include sub_titulos(right, $colorSecundario, 2rem, 100)
+}
+h4{
+    font-family: $fuenteSec, sans-serif;
+    color:$colorSecundario;
+    font-size: 1.4rem;
+    font-weight: 100;
+    text-align: center;
+    font-style: normal;
+}
+h5{
+    font-family: $fuentePpal, sans-serif;
+    color: $colorPrimario;
+    font-size: 1.3rem;
+    font-weight: 400;
+}
+p{
+    color: $colorSecundario;
+    font-family: $fuenteSec, sans-serif;
+    font-size: 400;
+}
+@media (max-width: 992px){
+    h1{
+        font-size: 60px;
+    }
+    h3{
+        font-size: 40px;
+    }
+}
+@media (max-width: 562px){
+    h1{
+        text-align: center;
+        font-size: 50px;
+    }
+    h3{
+        text-align: center;
+        font-size: 30px;
+    }
+}
