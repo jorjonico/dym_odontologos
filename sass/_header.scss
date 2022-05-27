@@ -64,16 +64,16 @@
         }
 }
 .fondo01{
-    background-image: linear-gradient(to right, $colorDark, $colorGris), url('../img/banner-img1.jpg');
+    background-image: linear-gradient(to right, $colorDark, $colorGris), url('../img/banner-img1.webp');
 }
 .fondo02{
-    background-image: linear-gradient(to left, $colorDark, $colorGris), url('../img/banner-img3.jpg');
+    background-image: linear-gradient(to left, $colorDark, $colorGris), url('../img/banner-img3.webp');
 }
 .fondo03{
-    background-image: linear-gradient(to right, $colorDark, $colorGris), url('../img/banner-img2.jpg');
+    background-image: linear-gradient(to right, $colorDark, $colorGris), url('../img/banner-img2.webp');
 }
 .fondo04{
-    background-image: linear-gradient(to right, $colorDark, $colorGris), url('../img/banner-img4.jpg');
+    background-image: linear-gradient(to right, $colorDark, $colorGris), url('../img/banner-img4.webp');
 }
 
 @media (max-width: 992px){
@@ -119,16 +119,16 @@
         background-position-x: right;
     }
     .fondo01{
-        background-image: url('../img/banner-phone5.jpg');
+        background-image: url('../img/banner-phone5.webp');
     }
     .fondo02{
-        background-image: url('../img/banner-phone1.jpg');
+        background-image: url('../img/banner-phone1.webp');
     }
     .fondo03{
-        background-image: url('../img/banner-phone2.jpg');
+        background-image: url('../img/banner-phone2.webp');
     }
     .fondo04{
-        background-image: url('../img/banner-phone3.jpg');
+        background-image: url('../img/banner-phone3.webp');
     }
 }
 @-webkit-keyframes focus-in-contract {
